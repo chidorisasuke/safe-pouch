@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Notifikasi Pendeteksi Jatuh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Status Pendeteksi Jatuh</h1>
+        <div id="status-area">
+            <p id="connection-status">Menghubungkan ke server...</p>
+            <div id="realtime-alert" class="alert-hidden">
+                <h2>PERHATIAN! JATUH TERDETEKSI!</h2>
+                <p id="alert-details"></p>
+            </div>
+        </div>
+
+        <div id="device-status-area">
+            <h2>Status Perangkat Real-time</h2>
+            </div>
+
+        <h2>Log Kejadian (Real-time)</h2>
+        <ul id="event-log">
+            <li class="log-placeholder">Belum ada kejadian tercatat.</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

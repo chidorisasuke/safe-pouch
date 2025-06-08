@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+#status-area {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+#connection-status {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.alert-hidden {
+    display: none;
+}
+
+#realtime-alert {
+    background-color: #ffcdd2; /* Merah muda */
+    color: #c62828; /* Merah tua */
+    border: 2px solid #ef9a9a; /* Merah lebih muda */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#realtime-alert h2 {
+    margin-top: 0;
+    color: #c62828; /* Merah tua */
+}
+
+#event-log {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#event-log li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+#event-log li:last-child {
+    border-bottom: none;
+}
+
+#event-log li.log-placeholder {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+#event-log li.fall-event {
+    background-color: #fff3cd; /* Kuning muda untuk kejadian jatuh */
+    border-left: 5px solid #ffeeba;
+}
+
+#event-log li .timestamp {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+}
+
+#event-log li .details {
+    font-size: 1em;
+}
+
+/* Tambahkan di akhir file style.css Anda */
+#device-status-area {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.device-card {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #6c757d; /* Abu-abu default */
+}
+
+.device-card strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* Warna status */
+.state-IDLE { border-left-color: #28a745; background-color: #e9f5ec; } /* Hijau */
+.state-FREEFALL_DETECTED { border-left-color: #ffc107; background-color: #fff8e1; } /* Kuning */
+.state-IMPACT_DETECTED { border-left-color: #fd7e14; background-color: #fff3e0; } /* Oranye */
+.state-ALARM_TRIGGERED { border-left-color: #dc3545; background-color: #f8d7da; } /* Merah */
+.state-NOTIFICATION_SENT { border-left-color: #0dcaf0; background-color: #e2f8ff; } /* Biru muda */

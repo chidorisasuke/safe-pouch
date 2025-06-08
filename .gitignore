@@ -1,0 +1,8 @@
+# Folder dependensi Node.js
+/node_modules
+
+# File log yang dibuat saat runtime
+*.log
+
+# File environment (jika nanti Anda pakai)
+.env
