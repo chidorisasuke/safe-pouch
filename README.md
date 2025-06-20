@@ -1,10 +1,6 @@
 # SPECO - Personal Fall Detection System
 
 <p align="center">
-  <img src="URL_TO_YOUR_PROJECT_LOGO_OR_DEMO_IMAGE.png" alt="SPECO Device" width="400"/>
-</p>
-
-<p align="center">
   A compact, wearable device designed to automatically detect falls and alert caregivers, providing safety and peace of mind for the elderly and their families.
 </p>
 
@@ -57,7 +53,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repo:**
     ```sh
-    git clone [https://github.com/chidorisasuke/SPECO.git](https://github.com/chidorisasuke/SPECO.git)
+    git clone https://github.com/chidorisasuke/SPECO.git
     ```
 2.  **Hardware Assembly:**
     * Connect the IMU sensor and buzzer to the correct pins on the ESP32C6 as described in the schematics (you can add schematics to your project later).
@@ -89,7 +85,5 @@ If you have a suggestion that would make this better, please fork the repo and c
 Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## Contact
-
-Yahya Bachtiar - [Your Email or LinkedIn Profile]
 
 Project Link: [https://github.com/chidorisasuke/SPECO](https://github.com/chidorisasuke/SPECO)
