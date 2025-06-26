@@ -1,0 +1,35 @@
+# ======================================================
+# ==      File .gitignore untuk Proyek ESP32 + Node.js      ==
+# ======================================================
+
+# 1. Folder Dependensi Node.js (PALING PENTING)
+# Folder ini bisa berukuran ratusan MB dan harus dibuat ulang
+# oleh setiap pengguna dengan perintah 'npm install'.
+/node_modules
+
+# 2. File Log Aplikasi
+# File log dibuat saat program berjalan dan tidak perlu disimpan di repository.
+*.log
+
+# 3. File Environment
+# Digunakan untuk menyimpan variabel sensitif seperti API Key atau password.
+# Merupakan praktik terbaik untuk selalu mengabaikannya.
+.env
+.env.*
+!.env.example
+
+# 4. File Sementara dari Arduino IDE
+# Folder ini dibuat oleh Arduino IDE setiap kali Anda meng-compile kode.
+/build/
+*.tmp
+*.bak
+
+# 5. File Sistem Operasi
+# File "sampah" yang dibuat oleh Windows, macOS, dan Linux.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 6. File Konfigurasi Editor Kode (Opsional)
+# Abaikan folder pengaturan dari editor seperti Visual Studio Code.
+.vscode/
